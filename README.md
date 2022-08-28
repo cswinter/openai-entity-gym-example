@@ -28,7 +28,7 @@ poetry run python minefield/train.py env.id=openai_gym.Minefield net.translation
 Running training with the EntityGym implementation:
 
 ```bash
-poetry run python minefield/train.py env.id=entity_gym.Minefield net.translation='(reference_entity: "Vehicle", position_features: ["x_pos", "y_pos"], rotation_vec_features: ["direction"])'
+poetry run python minefield/train.py env.id=entity_gym.Minefield net.translation='(reference_entity: "Vehicle", position_features: ["x_pos", "y_pos"], rotation_angle_feature: "direction")'
 ```
 
 Comparison in W&B: [https://wandb.ai/entity-neural-network/enn-ppo/reports/OpenAI-Gym-vs-EntityGym-Minefield-implementation--VmlldzoyNTQwMDI0](https://wandb.ai/entity-neural-network/enn-ppo/reports/OpenAI-Gym-vs-EntityGym-Minefield-implementation--VmlldzoyNTQwMDI0)
